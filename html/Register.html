@@ -1,0 +1,70 @@
+<html>
+<head>
+	<title>Registrar Usuario</title>
+	<meta charset="utf-8">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/Register.css">
+
+
+	<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="../css/Index.css">
+</head>
+
+<body>
+
+    <header>
+		<ul>
+			<li><h2>ACME</h2></li>
+			<li class="index">
+				<a  href="Index.html" >Ir a inicio</a></li>
+		</ul>
+    </header>
+    
+	<div class="container-form">
+		<form class="register" id="register">
+			<h2>Registrar usuario</h2>
+			<label>Nombres</label>
+			<p id="error" hidden>Algunas casillas están vacias</p>
+			<input required type="text" data-target="name" placeholder="nombres">
+			<label>Fecha de nacimiento:</label>
+				<input required type="date" data-target="birth">
+				<label>Genero:</label>
+				<select data-target="gender" required class="dato">
+					<option value="Masculino">Masculino</option>
+					<option value="Femenino">Femenino</option>
+					<option value="Otro">Otro</option>
+				</select>
+				<label >Estado civil:</label>
+				<select data-target="maritalStatus" required class="dato">
+					<option value="Casado/a">Casado/a</option>
+					<option value="Soltero/a">Soltero/a</option>
+					<option value="Divorciado/a">Divorciado/a</option>
+				</select>
+				<label>Departamento:</label>
+				<input required type="text" data-target="department" placeholder="Departamento">
+				<label>Ciudad:</label>
+				<input required type="text" data-target="city" placeholder="Ciudad">
+				<label>Barrio:</label>
+				<input required type="text" data-target="neighborhood" placeholder="Barrio">
+				<label>Direccion:</label>
+				<input required type="text" data-target="adress" placeholder="Direccion">
+				<label>Celular:</label>
+				<input required type="text" data-target="cellphone" placeholder="Celular">
+				<label>Telefono fijo:</label>
+				<input required type="text" data-target="phone" placeholder="Telefono">
+				<label>Cedula:</label>
+				<input required type="text" data-target="cedula" placeholder="Cedula">
+				<label>Contraseña:</label>
+				<input required type="password" data-target="password" placeholder="Contraseña">
+				<a data-target="role" value="medico" hidden></a>
+				<input type="submit" value="Registrarse">
+			
+			
+		</form>
+	</div>
+	<script type="text/javascript" src="../js/Register.js"></script>
+</body>
+
+</html>
